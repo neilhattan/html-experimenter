@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HTML Experimenter 0.9.5</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- wrapper for page content -->
+    <div id="wrapper">
+      <p class="banner">HTML Experimenter</p>
+      
+      <div id="toolbar">
+        <button id="store-btn">Save Page</button>
+        <button id="fetch-btn">Reload Page</button>
+        <button id="clear-btn">Clear Code</button>
+        <input type="checkbox" id="preserve-code" value="1" checked>
+        <label for="preserve-code">Preserve code across sessions</label>
+      </div>
+
+      <div id="code-area">
+        <p class="script-header">Put your HTML code here:</p>
+        <p class="script-header">Put your CSS commands here</p>
+        <textarea id="html-box" class="script-box"></textarea>
+        <textarea id="css-box" class="script-box"></textarea>
+      </div>
+
+      <div id="page-area">
+        <div id="main-box"></div>
+      </div>
+
+      <div id="footer">
+        <p>&nbsp;</p>
+      </div>
+
+      <!-- end of page wrapper -->
+    </div>
+  </body>
+</html>

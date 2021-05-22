@@ -1,0 +1,91 @@
+/* CSS files add styling rules to your content */
+@import url(reset.css);
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Rubik:wght@400;700&display=swap");
+
+/* global css variables */
+:root {
+  --body-bg: #723859;
+  --main-bg: #C787DC;
+  --code-px: 16px;
+  --code-font: "Roboto Mono";
+  --wrapper-width: 1024px;
+}
+
+body {
+  font-family: Rubik, Arial, Helvetica, sans-serif;
+  background-color: var(--body-bg);
+  color: #FFF;
+}
+
+/* wrapper allows UI to float in centre of the browser window */
+#wrapper {
+  width: var(--wrapper-width);
+  margin: 20px auto 25px auto;
+}
+
+/* where main page will be rendered */
+#main-box {
+  min-height: 300px;
+  width: 100%;
+  background-color: var(--main-bg);
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+}
+
+#html-box {
+  font-size: var(--code-px);
+  font-family: var(--code-font);
+  float: left;
+}
+
+#css-box {
+  font-size: var(--code-px);
+  font-family: var(--code-font);
+  float: left;
+}
+
+#code-area {
+  width: 100%;
+  float: left;
+  margin-top: 10px;
+}
+
+#page-area {
+  width: 100%;
+  float: left;
+}
+
+#toolbar {
+  width: 100%;
+  float: left;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.script-box {
+  display: block;
+  resize: none;
+  width: calc(50% - 0.5px);
+  height: 300px;
+  float: left;
+  outline: none;
+}
+
+.script-header {
+  display: block;
+  width: calc(50% - 0.5px);
+  float: left;
+  margin: 5px 0;
+}
+
+.banner {
+  background: #FFF;
+  color: #000;
+  text-align: center;
+  font-size: 25px;
+  width: 100%;
+  min-height: 30px;
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 3px;
+}
