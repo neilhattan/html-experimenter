@@ -1,0 +1,24 @@
+/* css settings reset
+
+/* box sizing includes all padding and  margins */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Remove default margins */
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
